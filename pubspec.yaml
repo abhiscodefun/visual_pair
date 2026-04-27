@@ -1,0 +1,40 @@
+name: visual_pair
+description: A Flutter app to assist visually impaired people with scene description.
+
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.10.5+9 # Using a specific stable version. Update to latest if desired.
+  flutter_tts: ^3.8.3
+  http: ^1.1.0
+  permission_handler: ^11.0.1
+  shared_preferences: ^2.2.2
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+# Configuration for flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/logo.png" # Path to your main app icon for launcher
+  min_sdk_android: 21 # Set this based on your app's minimum supported Android SDK version
+
+flutter:
+  uses-material-design: true
+
+  # Declare assets used in the application
+  assets:
+    - assets/images/load.png 
+    - assets/images/ui.png # Your main app logo/loading icon
